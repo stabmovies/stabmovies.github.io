@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'birch_stdregular';
+    src: url('birch_std_regular-webfont.woff2') format('woff2'),
+         url('birch_std_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body, html {
+    background-color:black;
+    height: 100%;
+    margin: 0;
+    font-family: 'birch_stdregular';
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 100%;
+}
+
+.container p {
+    font-size:75px;
+    letter-spacing: 5px;
+    color:lime;
+}
