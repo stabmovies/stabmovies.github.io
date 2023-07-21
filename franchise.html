@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>StabMovies.com | Franchise</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- SITE AUTHOR: Dylan Hudsons-->
+
+    <!-- META TAGS -->
+    <meta name="description" content="Explore the history of the Stab film franchise">
+    <meta name="keywords" content="StabMovies.com, Stab, Scream, Stab Movies, Scream Movies, Ghost Face, Ghostface">
+    
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- SOCIAL MEDIA -->
+    <!-- Facebook -->
+    <meta property="og:title" content="StabMovies.com | Franchise">
+    <meta property="og:description" content="Explore the history of the Stab film franchise">
+    <meta property="og:image" content="https://i.ibb.co/YLPSBTy/site-background.jpg">
+    <meta property="og:url" content="https://stab-movies.com">
+    <meta property="og:type" content="website">
+
+    <!-- Facebook -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="StabMovies.com | Franchise">
+    <meta name="twitter:description" content="Explore the history of the Stab film franchise">
+    <meta name="twitter:image" content="https://i.ibb.co/YLPSBTy/site-background.jpg">
+
+</head>
+<body>
+    <!-- MAIN PAGE CONTENT -->
+    <div class="franchise-content-wrapper">
+      <div class="menu-button" onclick="toggleMenu()">&#9776;</div>
+
+      <!-- GRID -->
+      <div class="movie-grid-container">
+        <div class="movie-grid-item"><img src="assets/Stab-1-Logo.png" width=250px onclick="openModal('assets/footers/stab_1_footer.png')"><p><span style="color:red;">1997</span><br><span style="color:white;">Directed by: </span><span style="color:#B4B4B4">Robert Rodriguez</span></p></div>
+        <div class="movie-grid-item"><img src="assets/Stab-2-Logo.png" width=250px onclick="openModal('assets/footers/stab_2_footer.png')"><p><span style="color:red;">1998</span><br><span style="color:white;">Directed by: </span><span style="color:#B4B4B4">Robert Rodriguez</span></p></div>
+        <div class="movie-grid-item"><img src="assets/Stab-3-Logo.png" width=250px onclick="openModal('assets/footers/stab_3_footer.png')"><p><span style="color:red;">2006</span><br><span style="color:white;">Directed by: </span><span style="color:#B4B4B4">Robert Rodriguez</span></p></div>  
+        <div class="movie-grid-item"><img src="assets/Stab-4-Logo.png" width=250px onclick="openModal('assets/footers/stab_4_footer.png')"><p><span style="color:red;">2007</span><br><span style="color:white;">Directed by: </span><span style="color:#B4B4B4">Max Feinberg</span></p></div>
+        <div class="movie-grid-item"><img src="assets/Stab-5-Logo.png" width=250px onclick="openModal('assets/footers/stab_5_footer.png')"><p><span style="color:red;">2008</span><br><span style="color:white;">Directed by: </span><span style="color:#B4B4B4">Max Feinberg</span></p></div>
+        <div class="movie-grid-item"><img src="assets/Stab-6-Logo.png" width=250px onclick="openModal('assets/footers/stab_6_footer.png')"><p><span style="color:red;">2009</span><br><span style="color:white;">Directed by: </span><span style="color:#B4B4B4">Max Feinberg</span></p></div>  
+        <div class="movie-grid-item"><img src="assets/Stab-7-Logo.png" width=250px onclick="openModal('assets/footers/stab_7_footer.png')"><p><span style="color:red;">2010</span><br><span style="color:white;">Directed by: </span><span style="color:#B4B4B4">Max Feinberg</span></p></div>
+        <div class="movie-grid-item"><img src="assets/Stab-8-Logo.png" width=250px onclick="openModal('assets/footers/stab_8_footer.png')"><p><span style="color:red;">2021</span><br><span style="color:white;">Directed by: </span><span style="color:#B4B4B4">Rian Johnson</span></p></div>
+      </div>
+
+      <div class="modal" id="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="" alt="Movie Poster" class="modal-content" id="modal-image">
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <br><br>
+        <center>
+          <p style="font-size:10px;">Privacy Policy • Terms of Use • Cookies information</p>
+          <p style="font-size:10px; color:darkgray;">FATHER DEATH IS A REGISTERED TRADEMARK OF THE ROUSEY COSTUME COMPANY. © 1995 ALL RIGHTS RESERVED. © 2021 SUNRISE STUDIOS</p>
+          <br><br>
+        </center>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="navigation-menu" id="navMenu"> <!-- Navigation menu -->
+      <ul>
+        <img src="assets/stab-logo.png" width=250px>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="franchise.html">FRANCHISE</a></li>
+        <li><a href="index.html#synopsis">SYNOPSIS</a></li>
+      </ul>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "StabMovies.com",
+      "url": "https://stab-movies.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+</script>
+</html>
