@@ -37,6 +37,7 @@ function showMovieInfo(film) {
 
 // FOOTERS
 function openModal(imageUrl) {
+  console.log(imageUrl);
   var modal = document.getElementById('modal');
   var modalImage = document.getElementById('modal-image');
 
