@@ -8,13 +8,9 @@
 }
 
 body, html {
-    background-color:black;
-    background-image: url('assets/site-background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100%;
     margin: 0;
+    padding:0;
     font-family: 'birch_stdregular';
 }
 
@@ -29,4 +25,117 @@ body, html {
     font-size:75px;
     letter-spacing: 5px;
     color:lime;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Set your background image here */
+    background-image: url('assets/flamethrower.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    /* Set the transition for the fade-in effect */
+    transition: opacity 1s ease-in-out;
+    /* Additional styling for the logo if needed */
+}
+
+.logo p {
+    font-family: 'birch_stdregular';
+    font-size:50px;
+    color:#95C96F;
+}
+
+.content {
+    position: relative; /* Set to relative to allow scrolling within the wrapper */
+    margin-top: 100vh; /* Push the content below the viewport initially */
+    height:100vh;
+    color:white;
+    background-color:black;
+    /* Additional styling for the content section if needed */
+}
+
+.content-wrapper {
+    background-color:black;
+}
+
+/* Add this class to show the content when the user scrolls */
+.content.show {
+    margin-top: 0; /* Show the content section by bringing it up */
+}
+.grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Horizontally center the items */
+    background-color:black;
+
+    /* Responsive adjustments for tablet devices */
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+     /* Responsive adjustments for mobile devices */
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        justify-content: flex-start; /* Align items to the left for mobile */
+    }
+}
+  
+.grid-item {
+    display: flex;
+    align-items: center; /* Center items vertically within the grid item */
+    justify-content: center; /* Center items horizontally within the grid item */
+    background-color:black;
+    /* Additional styling for each grid item if needed */
+
+    flex: 1 0 300px; /* Each grid item takes a minimum of 300px width */
+
+    /* Responsive adjustments for mobile devices */
+    @media (max-width: 768px) {
+        flex: 1 0 100%; /* Each grid item takes full width for mobile */
+    }
+}
+
+.grid-item p {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5
+}
+
+.grid-item img {
+    max-width: 75%; /* Set the maximum width to 100% of the container */
+    border-radius:10px;
+    border:1px solid white;
+    /* You can also use a specific width like 'width: 300px;' or 'width: 50%;' */
+    /* Additional styling for the image if needed */
+}
+
+.top-item {
+    justify-content: flex-start;
+    padding-left:70px;
+}
+
+.top-item p {
+    font-family: 'birch_stdregular' !important;
+    color:white;
+    font-size:50px;
+    letter-spacing: 3px;
+}
+
+.footer {
+    background-color:black;
+    color:white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
