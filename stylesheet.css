@@ -12,6 +12,7 @@ body, html {
     margin: 0;
     padding:0;
     font-family: 'birch_stdregular';
+    background-color:black;
 }
 
 .container {
@@ -139,3 +140,132 @@ body, html {
     color:white;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* Default style for the image */
+#footer-image {
+    width: 75%; /* Default width for non-mobile screens */
+  }
+  
+  /* Media query for mobile devices with a maximum screen width of 768 pixels */
+  @media (max-width: 768px) {
+    #footer-image {
+      width: 100%; /* Change the width to 100% for mobile screens */
+    }
+}
+
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 45px;
+    color:white;
+    cursor: pointer;
+    z-index: 2; /* Ensure the button stays above other content */
+  }
+  
+  .navigation-menu {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Semi-transparent black background */
+    display: none; /* Hide the menu by default */
+    z-index: 1; /* Ensure the menu overlays other content */
+  }
+  
+  .navigation-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navigation-menu li {
+    padding: 10px;
+  }
+  
+  .navigation-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 50px;
+  }
+
+  .navigation-menu a:hover {
+    color:red;
+  }
+
+  .navigation-nenu a:active {
+    text-decoration: line-through;
+  }
+
+/* TIMELINE */
+.movie-grid-container {
+    display: grid;
+    column-gap: 50px;
+    row-gap:50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .movie-grid-container {
+        grid-template-columns: auto auto; /* Change the width to 100% for mobile screens */
+    }
+}
+  
+.movie-grid-item {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius:20px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.franchise-content-wrapper {
+    padding-left:75px;
+    padding-right:75px;
+    padding-top:50px;
+}
+
+/* FOOTERS */
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed;
+    z-index: 3; /* Ensure the modal is above other content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    padding: 20px;
+  
+    /* Center align the content */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    color: #f1f1f1;
+    cursor: pointer;
+  }

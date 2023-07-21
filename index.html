@@ -21,6 +21,20 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
 
+    <!-- SOCIAL MEDIA -->
+    <!-- Facebook -->
+    <meta property="og:title" content="StabMovies.com | Official Website">
+    <meta property="og:description" content="Welcome to the new and improved StabMovies.com. A new era of Stab is coming. Stab 8 out now!">
+    <meta property="og:image" content="https://i.ibb.co/YLPSBTy/site-background.jpg">
+    <meta property="og:url" content="https://stab-movies.com">
+    <meta property="og:type" content="website">
+
+    <!-- Facebook -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="StabMovies.com | Official Website">
+    <meta name="twitter:description" content="Welcome to the new and improved StabMovies.com. A new era of Stab is coming. Stab 8 is out now!">
+    <meta name="twitter:image" content="https://i.ibb.co/YLPSBTy/site-background.jpg">
+
 </head>
 <body>
     <div class="background-container">
@@ -39,6 +53,7 @@
 
     <!-- MAIN PAGE CONTENT -->
     <div class="content-wrapper">
+      <div class="menu-button" onclick="toggleMenu()">&#9776;</div>
       <div class="content">
         <div class="grid-item top-item">
           <p>THAT SHIT IS LIT</p>
@@ -46,10 +61,10 @@
         <div class="grid-wrapper">
           
           <div class="grid-item">
-            <img src="assets/stab-8.jpg">
+            <img src="assets/stab-8.jpg"><!-- IMAGE PURCHASED FROM ETSY -->
           </div>
           
-          <div class="grid-item">
+          <div class="grid-item" id="synopsis">
             <p style="color:#B4B4B4; font-size:15px; padding-left:20px; padding-right:20px;">In the highly anticipated horror reboot, "Stab," the town of Woodsboro is once again 
             terrorized by a copycat killer mimicking the gruesome murders from the iconic Stab film series. Infused with daring social commentary, 
             the film introduces Emma, a determined and resourceful teenager, who becomes embroiled in the chilling mystery when her best friend becomes a 
@@ -81,7 +96,7 @@
           <div class="footer">
             <hr>
             <center>
-              <img src="assets/footer.png" width="75%">
+              <img id="footer-image" src="assets/footer.png">
               <p style="font-size:10px;">Privacy Policy • Terms of Use • Cookies information</p>
               <p style="font-size:10px; color:darkgray;">FATHER DEATH IS A REGISTERED TRADEMARK OF THE ROUSEY COSTUME COMPANY. © 1995 ALL RIGHTS RESERVED. © 2021 SUNRISE STUDIOS</p>
               <br><br>
@@ -90,6 +105,16 @@
 
         </div>
       </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="navigation-menu" id="navMenu"> <!-- Navigation menu -->
+      <ul>
+        <img src="assets/stab-logo.png" width=250px>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="franchise.html">FRANCHISE</a></li>
+        <li><a href="index.html#synopsis">SYNOPSIS</a></li>
+      </ul>
     </div>
 </body>
 
