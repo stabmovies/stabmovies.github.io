@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>StabMovies.com | The True Story</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- SITE AUTHOR: Dylan Hudsons-->
+
+    <!-- META TAGS -->
+    <meta name="description" content="Learn the truth behind the Stab film franchise.">
+    <meta name="keywords" content="StabMovies.com, Stab, Scream, Stab Movies, Scream Movies, Ghost Face, Ghostface">
+    
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- SOCIAL MEDIA -->
+    <!-- Facebook -->
+    <meta property="og:title" content="StabMovies.com | The True Story">
+    <meta property="og:description" content="Learn the truth behind the Stab film franchise.">
+    <meta property="og:image" content="https://i.ibb.co/YLPSBTy/site-background.jpg">
+    <meta property="og:url" content="https://stab-movies.com">
+    <meta property="og:type" content="website">
+
+    <!-- Facebook -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="StabMovies.com | The True Story">
+    <meta name="twitter:description" content="Learn the truth behind the Stab film franchise.">
+    <meta name="twitter:image" content="https://i.ibb.co/YLPSBTy/site-background.jpg">
+
+</head>
+<body>
+    <!-- MAIN PAGE CONTENT -->
+    <div class="franchise-content-wrapper">
+      <div class="menu-button" onclick="toggleMenu()">&#9776;</div>
+      <!-- GHOSTFACE HIERARCHY -->
+      <center>
+        <img src="assets/Stab-TrueStory-Logo.png" width="250px">
+        <h3 style="color:white; font-size:50px; letter-spacing:5px;">THE GHOSTFACE HIERARCHY</h3>
+        <hr><br>
+      </center>
+
+      <!-- GRID -->
+      <div class="story-grid-container">
+        <!-- BILLY LOOMIS -->
+        <div class="story-grid-item">
+          <img src="assets/portraits/billy-loomis.jpg" width=250px onclick="openCharacterModal('Billy Loomis', 'assets/portraits/billy-loomis.jpg')">
+          <p>BILLY LOOMIS</p>
+        </div>
+
+        <!-- STU MACHER -->
+        <div class="story-grid-item">
+          <img src="assets/portraits/stu-macher.jpg" width=250px onclick="openCharacterModal('Stu Macher', 'assets/portraits/stu-macher.jpg')">
+          <p>STU MACHER</p>
+        </div>
+
+        <!-- NANCY LOOMIS -->
+        <div class="story-grid-item">
+          <img src="assets/portraits/nancy-loomis.jpg" width=250px onclick="openCharacterModal('Nancy Loomis', 'assets/portraits/nancy-loomis.jpg')">
+          <p>NANCY LOOMIS</p>
+        </div>
+
+        <!-- MICKEY ALTIERI -->
+        <div class="story-grid-item">
+          <img src="assets/portraits/mickey-altieri.jpg" width=250px onclick="openCharacterModal('Mickey Altieri', 'assets/portraits/mickey-altieri.jpg')">
+          <p>MICKEY ALTIERI</p>
+        </div>
+
+        <!-- ROMAN BRIDGER -->
+        <div class="story-grid-item">
+          <img src="assets/portraits/roman-bridger.jpg" width=250px onclick="openCharacterModal('Roman Bridger', 'assets/portraits/roman-bridger.jpg')">
+          <p>ROMAN BRIDGER</p>
+        </div>
+
+        <!-- JILL ROBERTS -->
+        <div class="story-grid-item">
+          <img src="assets/portraits/jill-roberts.jpg" width=250px onclick="openCharacterModal('Jill Roberts', 'assets/portraits/jill-roberts.jpg')">
+          <p>JILL ROBERTS</p>
+        </div>
+
+        <!-- CHARLIE WALKER -->
+        <div class="story-grid-item">
+          <img src="assets/portraits/charlie-walker.jpg" width=250px onclick="openCharacterModal('Charlie Walker', 'assets/portraits/charlie-walker.jpg')">
+          <p>CHARLIE WALKER</p>
+        </div>
+
+        <!-- AMBER FREEMAN -->
+        <div class="story-grid-item">
+          <img src="assets/portraits/amber-freeman.jpg" width=250px onclick="openCharacterModal('Amber Freeman', 'assets/portraits/amber-freeman.jpg')">
+          <p>AMBER FREEMAN</p>
+        </div>
+
+        <!-- RICHIE KIRSCH -->
+        <div class="story-grid-item">
+          <img src="assets/portraits/richie-kirsch.jpg" width=250px onclick="openCharacterModal('Richie Kirsch', 'assets/portraits/richie-kirsch.jpg')">
+          <p>RICHIE KIRSCH</p>
+        </div>
+
+        <!-- ETHAN LANDRY -->
+        <div class="story-grid-item">
+          <img src="assets/portraits/ethan-landry.jpg" width=250px onclick="openCharacterModal('Ethan Landry', 'assets/portraits/ethan-landry.jpg')">
+          <p>ETHAN LANDRY</p>
+        </div>
+
+        <!-- WAYNE BAILEY -->
+        <div class="story-grid-item">
+          <img src="assets/portraits/wayne-bailey.jpg" width=250px onclick="openCharacterModal('Wayne Bailey', 'assets/portraits/wayne-bailey.jpg')">
+          <p>WAYNE BAILEY</p>
+        </div>
+
+        <!-- QUINN BAILEY -->
+        <div class="story-grid-item">
+          <img src="assets/portraits/quinn-bailey.jpg" width=250px onclick="openCharacterModal('Quinn Bailey', 'assets/portraits/quinn-bailey.jpg')">
+          <p>QUINN BAILEY</p>
+        </div>
+      </div>
+
+      <!-- FINAL GIRLS -->
+      <center>
+        <br><hr>
+        <h3 style="color:white; font-size:50px; letter-spacing:5px;">THE FINAL GIRLS</h3>
+        <hr><br>
+      </center>
+
+      <!-- GRID -->
+      <div class="story-grid-container">
+        <!-- SIDNEY PRESCOTT -->
+        <div class="story-grid-item">
+          <img src="assets/final-girls/sidney-prescott.jpg" width=250px onclick="openCharacterModal('Sidney Prescott', '')">
+          <p>SIDNEY PRESCOTT</p>
+        </div>
+
+        <!-- GALE WEATHERS -->
+        <div class="story-grid-item">
+          <img src="assets/final-girls/gale-weathers.jpg" width=250px onclick="openCharacterModal('Gale Weathers', '')">
+          <p>GALE WEATHERS</p>
+        </div>
+
+        <!-- KIRBY REED -->
+        <div class="story-grid-item">
+          <img src="assets/final-girls/kirby-reed.jpg" width=250px onclick="openCharacterModal('Kirby Reed', 'assets/final-girls/kirby-reed.jpg')">
+          <p>KIRBY REED</p>
+        </div>
+
+        <!-- SAMANTHA CARPENTER -->
+        <div class="story-grid-item">
+          <img src="assets/final-girls/samantha-carpenter.jpg" width=250px onclick="openCharacterModal('Samantha Carpenter', 'assets/final-girls/samantha-carpenter.jpg')">
+          <p>SAM CARPENTER</p>
+        </div>
+
+        <!-- TARA CARPENTER -->
+        <div class="story-grid-item">
+          <img src="assets/final-girls/tara-carpenter.jpg" width=250px onclick="openCharacterModal('Tara Carpenter', 'assets/final-girls/tara-carpenter.jpg')">
+          <p>TARA CARPENTER</p>
+        </div>
+
+        <!-- BLANK -->
+        <div class="story-grid-item" style="border:none !important;">
+          <!-- BLANK -->
+        </div>
+      </div>
+
+      <div class="killer-modal" id="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="" class="killer-modal-content" id="modal-image" width="250px">
+        <h1 id="killer-name" class="killer-image"></h1>
+        <p id="biography" style="padding-left:150px; padding-right:150px; padding-top:100px; font-size:16px; color:white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <br><br>
+        <center>
+          <p style="font-size:10px;">Privacy Policy • Terms of Use • Cookies information</p>
+          <p style="font-size:10px; color:darkgray;">FATHER DEATH IS A REGISTERED TRADEMARK OF THE ROUSEY COSTUME COMPANY. © 1995 ALL RIGHTS RESERVED. © 2021 SUNRISE STUDIOS</p>
+          <br><br>
+        </center>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="navigation-menu" id="navMenu"> <!-- Navigation menu -->
+      <ul>
+        <img src="assets/stab-logo.png" width=250px>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="franchise.html">FRANCHISE</a></li>
+        <li><a href="index.html#synopsis">SYNOPSIS</a></li>
+        <li><a href="story.html" style="color:red !important;">THE TRUE STORY</a></li>
+        <li><a href="stab.html">THE STAB TRILOGY</a></li>
+      </ul>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "StabMovies.com",
+      "url": "https://stab-movies.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+</script>
+</html>
